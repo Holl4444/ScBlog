@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: grid;
+  grid-template-columns: 1em 1fr 1em;
+  grid-template-areas: 
+  ".... .... ...."
+  ".... head ...."
+  ".... main ...."
+  ".... foot ...."
+  ".... .... ....";
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    grid-area: head;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: foot;
+}
+
+.logo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2em;
+  font-size: 0.85rem;
+  margin-right: auto;
+}
+
+.logo-img {
+  height: 1.45rem;
+  width: auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4em;
+}
+
+a {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #090909;
+}
