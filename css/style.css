@@ -8,27 +8,28 @@ html,
 body {
   display: grid;
   grid-template-columns: 1em 1fr 1em;
-  grid-template-areas: 
-  ".... .... ...."
-  ".... head ...."
-  ".... main ...."
-  ".... foot ...."
-  ".... .... ....";
+  grid-template-areas:
+    '.... .... ....'
+    '.... head ....'
+    '.... main ....'
+    '.... foot ....'
+    '.... .... ....';
+  gap: 1em;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
-    grid-area: head;
+  grid-area: head;
 }
 
 main {
-    grid-area: main;
+  grid-area: main;
 }
 
 footer {
-    grid-area: foot;
+  grid-area: foot;
 }
 
 .logo-wrap {
