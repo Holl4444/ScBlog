@@ -7,18 +7,19 @@
 html,
 body {
   display: grid;
+  justify-content: center;
   grid-template-columns: 1fr;
   grid-template-areas:
     'head'
     'main '
     'foot';
-  gap: 1em;
   grid-auto-flow: column dense;
   margin: 0;
   padding: 0;
   font-family: 'Source Sans 3', monospace;
   font-size: 16px;
   width: 100vw;
+  min-width: 320px;
   min-height: 100vh;
 }
 
@@ -31,11 +32,17 @@ h6,
 p {
   margin: 0;
   padding: 0;
-  text-align: left;
+}
+
+p,
+h2 {
+  align-self: flex-start;
 }
 
 header {
+  width: 100%;
   grid-area: head;
+  padding: 1.063em 1.5em 1.178em 1.25em;
 }
 
 main {
@@ -65,39 +72,38 @@ footer {
 }
 
 .nav {
+  width: 100%;
+  text-wrap: nowrap;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 4em;
+  gap: 2em;
 }
 
 a {
+  font-size: 0.75rem;
   font-weight: 600;
   text-decoration: none;
   color: #090909;
 }
 
-a,
-.date {
-  font-size: 0.75rem;
-}
-
 .hero.post {
   width: 100%;
-  height: 12.38%;
+  height: 20%;
   background-color: #090909;
   background-image: url('/images/article-image-hero.svg');
   background-size: cover;
   color: #fff;
+  padding: 0 1.25em;
 }
 
 .hero-front {
+  margin-top: 29.71%;
+  margin-bottom: 1.56em;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  margin: 0 1.25em;
-  padding-top: 5.44em;
-  padding-bottom: 1.56em;
+  align-self: flex-start;
+  gap: 0.5em;
 }
 
 h1.hero {
@@ -112,28 +118,28 @@ h1.hero {
 }
 
 .post {
+  text-align: left;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
 
-.article-posts {
+.article-posts, .blog-posts {
   width: 100%;
   display: grid;
   grid-template-columns: 1.25em 1fr 1.25em;
+  row-gap: 2.56em;
+  justify-content: center;
+}
+
+.article-posts {
   grid-template-areas:
     '..... ..... .....'
     '..... arti1 .....'
     '..... arti2 .....'
     '..... arti3 .....'
     '..... ..... .....';
-  gap: 2.56em 0.125em;
-  justify-content: center;
-}
-
-.blog-img {
-  width: 100%;
 }
 
 #article1 {
@@ -146,18 +152,21 @@ h1.hero {
   grid-area: arti3;
 }
 
-.blog-posts {
+.blog-img {
   width: 100%;
-  display: grid;
-  grid-template-columns: 1.25em 1fr 1.25em;
-  grid-template-areas:
-    '..... ..... .....'
+  margin-bottom: 0.875em;
+}
+
+.date {
+  font-size: 0.886rem;
+}
+
+.blog-posts {
+  grid-template-areas:   
     '..... blog1 .....'
     '..... blog2 .....'
     '..... blog3 .....'
     '..... ..... .....';
-  gap: 2.56em 0.125em;
-  justify-content: center;
 }
 
 #blog1 {
@@ -171,5 +180,42 @@ h1.hero {
 }
 
 .hidden {
-  /* display: none; */
+  display: none;
+}
+
+#expand-btn {
+  all:unset ;
+  text-decoration: underline #000;
+  text-decoration-thickness: 1px;
+  font-family: 'Source Sans 3', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 2.69em;
+}
+
+
+.btn-link:hover, .btn-link:focus {
+  text-decoration-color: #090909;
+}
+
+.btn-link:active {
+  text-decoration-color: #090909;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.25em;
+  background-color: #202020;
+  color: #ececec;
+  font-size: 0.75rem;
+  padding: 3.08em 0;
+}
+
+footer p {
+  align-self: center;
+  color: #d7d7d7;
 }
