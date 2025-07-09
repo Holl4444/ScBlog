@@ -13,7 +13,7 @@
       crossorigin
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -36,109 +36,121 @@
         >
       </nav>
     </header>
+
     <main>
       <article class="hero post">
-        <p class="date hero">JULY 23, 2022</p>
-        <h1 class="title hero">
-          My new journey as a bootcamp student.
-        </h1>
-        <p class="article-preview hero">
-          After several months of learning in the Frontend Developer
-          Career Path, I've made the big jump over to the Bootcamp to
-          get expert code reviews of my Solo Project projects and meet
-          like-minded peers.
-        </p>
+        <div class="hero-front">
+          <p class="date hero">JULY 23, 2022</p>
+          <h1 class="title hero">
+            My new journey as a bootcamp student.
+          </h1>
+          <p class="article-preview hero">
+            After several months of learning in the Frontend Developer
+            Career Path, I've made the big jump over to the Bootcamp
+            to get expert code reviews of my Solo Project projects and
+            meet like-minded peers.
+          </p>
+        </div>
       </article>
 
-      <article class="post">
-        <img
-          src="images/article-image-03.svg"
-          alt="A clean modern desk with an open laptop showing code and a small cactus in a green vase."
-        />
-        <p class="date">JULY 23, 2022</p>
-        <h2>Blog one</h2>
-        <p>
-          I'm excited to start a new learning journey as a Scrimba
-          Bootcamp student! After several months of learning in the
-          Frontend Developer Career Path.
-        </p>
-      </article>
+      <section class="article-posts">
+        <article class="post" id="article1">
+          <img
+            class="blog-img"
+            src="images/article-image-03.svg"
+            alt="A clean modern desk with an open laptop showing code and a small cactus in a green vase."
+          />
+          <p class="date">JULY 23, 2022</p>
+          <h2>Blog one</h2>
+          <p>
+            I'm excited to start a new learning journey as a Scrimba
+            Bootcamp student! After several months of learning in the
+            Frontend Developer Career Path.
+          </p>
+        </article>
 
-      <article class="post">
-        <img
-          src="images/article-image-02.svg"
-          alt="An arm holding out a lightbulb. The background is of a sunrise, light blue sky blending down to a warm pink"
-        />
-        <p class="date">JULY 23, 2022</p>
-        <h2>Blog two</h2>
-        <p>
-          I'm excited to start a new learning journey as a Scrimba
-          Bootcamp student! After several months of learning in the
-          Frontend Developer Career Path..
-        </p>
-      </article>
+        <article class="post" id="article2">
+          <img
+            class="blog-img"
+            src="images/article-image-02.svg"
+            alt="An arm holding out a lightbulb. The background is of a sunrise, light blue sky blending down to a warm pink"
+          />
+          <p class="date">JULY 23, 2022</p>
+          <h2>Blog two</h2>
+          <p>
+            I'm excited to start a new learning journey as a Scrimba
+            Bootcamp student! After several months of learning in the
+            Frontend Developer Career Path..
+          </p>
+        </article>
 
-      <article class="post">
-        <img
-          src="images/article-image-01.svg"
-          alt="An open laptop with the text 'I design and develop experiences that make people's lives simple' with emphasis on the word simple. The background shows wooden chairs and tables and a modern interior, possibly a cafeteria."
-        />
-        <p class="date">JULY 23, 2022</p>
-        <h2>Blog three</h2>
-        <p>
-          I'm excited to start a new learning journey as a Scrimba
-          Bootcamp student! After several months of learning in the
-          Frontend Developer Career Path..
-        </p>
-      </article>
+        <article class="post" id="article3">
+          <img
+            class="blog-img"
+            src="images/article-image-01.svg"
+            alt="An open laptop with the text 'I design and develop experiences that make people's lives simple' with emphasis on the word simple. The background shows wooden chairs and tables and a modern interior, possibly a cafeteria."
+          />
+          <p class="date">JULY 23, 2022</p>
+          <h2>Blog three</h2>
+          <p>
+            I'm excited to start a new learning journey as a Scrimba
+            Bootcamp student! After several months of learning in the
+            Frontend Developer Career Path..
+          </p>
+        </article>
+      </section>
 
       <button class="show-btn">View More</button>
+      <section class="blog-posts">
+        <article class="post hidden" id="blog1">
+          <img
+            class="blog-img"
+            src="images/blog-image-05.svg"
+            alt="An abstract neon image of a city. Buildings can be made out as dark purple angular shapes with light pink lights. The sky ranges from purple to hot pink."
+          />
+          <p class="date">JULY 23, 2022</p>
+          <h2>Blog four</h2>
+          <p>
+            I'm excited to start a new learning journey as a Scrimba
+            Bootcamp student! After several months of learning in the
+            Frontend Developer Career Path..
+          </p>
+        </article>
 
-      <article class="post hidden">
-        <img
-          src="images/blog-image-05.svg"
-          alt="An abstract neon image of a city. Buildings can be made out as dark purple angular shapes with light pink lights. The sky ranges from purple to hot pink."
-        />
-        <p class="date">JULY 23, 2022</p>
-        <h2>Blog four</h2>
-        <p>
-          I'm excited to start a new learning journey as a Scrimba
-          Bootcamp student! After several months of learning in the
-          Frontend Developer Career Path..
-        </p>
-      </article>
+        <article class="post hidden" id="blog2">
+          <img
+            class="blog-img"
+            src="images/blog-image-03.svg"
+            alt="An action shot of a fair haired girl in her late teens or early twenties, about to do a gentle turn as she walks along a beach in the early evening."
+          />
+          <p class="date">JULY 23, 2022</p>
+          <h2>Blog five</h2>
+          <p>
+            I'm excited to start a new learning journey as a Scrimba
+            Bootcamp student! After several months of learning in the
+            Frontend Developer Career Path..
+          </p>
+        </article>
 
-      <article class="post hidden">
-        <img
-          src="images/blog-image-03.svg"
-          alt="An action shot of a fair haired girl in her late teens or early twenties, about to do a gentle turn as she walks along a beach in the early evening."
-        />
-        <p class="date">JULY 23, 2022</p>
-        <h2>Blog five</h2>
-        <p>
-          I'm excited to start a new learning journey as a Scrimba
-          Bootcamp student! After several months of learning in the
-          Frontend Developer Career Path..
-        </p>
-      </article>
-
-      <article class="post hidden">
-        <img
-          src="images/blog-image-01.svg"
-          alt="A shot of a computer screen in dark-mode. One side of the screen shows code and the other a large React icon."
-        />
-        <p class="date">JULY 23, 2022</p>
-        <h2>Blog six</h2>
-        <p>
-          I'm excited to start a new learning journey as a Scrimba
-          Bootcamp student! After several months of learning in the
-          Frontend Developer Career Path..
-        </p>
-      </article>
+        <article class="post hidden" id="blog3">
+          <img
+            class="blog-img"
+            src="images/blog-image-01.svg"
+            alt="A shot of a computer screen in dark-mode. One side of the screen shows code and the other a large React icon."
+          />
+          <p class="date">JULY 23, 2022</p>
+          <h2>Blog six</h2>
+          <p>
+            I'm excited to start a new learning journey as a Scrimba
+            Bootcamp student! After several months of learning in the
+            Frontend Developer Career Path..
+          </p>
+        </article>
+      </section>
     </main>
     <footer>
-        <h3>My learning journal</h3>
-        <p>Copyright ©2022</p>
+      <h3>My learning journal</h3>
+      <p>Copyright ©2022</p>
     </footer>
     <script type="module" src="index.js" defer></script>
   </body>
